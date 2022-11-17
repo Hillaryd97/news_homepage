@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Practice</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-inter sm:mx-4">
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu"  class="fixed flex-col hidden font-semibold h-screen bg-offWhite pt-36 sm:w-auto sm:self-center drop-shadow-md space-y-4 w-2/3 px-5 top-0 right-0 text-base">
+        <a href="#" class="tracking-wider">Home</a>
+        <a href="#" class="tracking-wider">New</a>
+        <a href="#" class="tracking-wider">Popular</a>
+        <a href="#" class="tracking-wider">Trending</a>
+        <a href="#" class="tracking-wider">Categories</a>
+      </div>
+    </div>
+    <header>
+      <nav class="relative container mx-auto text-darkGreyishBlue">
+        <div class="flex items-center mt-10 justify-between">
+          <div class="pt-2">
+            <img src="img/logo.svg" alt="" />
+          </div>
+          <div class="hidden space-x-6 md:flex">
+            <a href="#" class="hover:text-softRed">Home</a>
+            <a href="#" class="hover:text-softRed">New</a>
+            <a href="#" class="hover:text-softRed">Popular</a>
+            <a href="#" class="hover:text-softRed">Trending</a>
+            <a href="#" class="hover:text-softRed">Categories</a>
+          </div>
+          <div class="md:hidden">
+            <img id="menu-btn" class="cursor-pointer transition-all block relative px md:hidden focus:outline-none" src="img/icon-menu.svg" alt="">
+            <img src="img/icon-menu-close.svg" class="hidden relative cursor-pointer transition-all focus:outline-none" id="close" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="overlay" class=""></section>
+    <main class="container mx-auto mt-10">
+      <section id="hero" class="grid grid-cols-1 md:space-x-6 md:grid-cols-3">
+        <div class="grid md:col-span-2">
+          <div class="">
+            <img src="img/image-web-3-desktop.jpg" class="" alt="" />
+          </div>
+          <div class="my-5 grid md:grid-cols-2 items-center">
+            <div class="mb-3 lg:pr-10 sm:pr-28 md:pr-4">
+              <h1 class="text-3xl font-extrabold text-veryDarkBlue md:text-5xl">
+                The Bright Future of Web 3.0?
+              </h1>
+            </div>
+            <div>
+              <p class="mb-10 leading-8 pr-5 text-darkGreyishBlue md:pr-0" style="font-size: 16px">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a
+                href="#"
+                class="tracking-widest text-xs bg-softRed text-offWhite px-9 py-3 sm:mb-10 hover:bg-veryDarkBlue"
+                >R E A D &nbsp; M O R E</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="grid md:col-span-1">
+          <div
+            class="bg-veryDarkBlue p-4 flex flex-col justify-between space-y-4 text-offWhite mt-12 md:mt-0 "
+          >
+            <h2 class="text-4xl font-bold mt-3 text-softOrange">New</h2>
+            <div>
+              <h3
+                class="font-bold text-lg cursor-pointer hover:text-softOrange"
+              >
+                Hydrogen VS Electric Cars
+              </h3>
+              <p class="pb-6" style="font-size: 15px">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+              <hr />
+            </div>
+            <div>
+              <h3
+                class="font-bold mb-2 text-lg cursor-pointer hover:text-softOrange"
+              >
+                The Downsides of AI Artistry
+              </h3>
+              <p class="pb-6 text-grayishBlue" style="font-size: 15px">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+              <hr />
+            </div>
+            <div>
+              <h3
+                class="font-bold mb-2 text-lg cursor-pointer hover:text-softOrange"
+              >
+                Is VC Funding Drying Up?
+              </h3>
+              <p class="pb-8" style="font-size: 15px">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="" class="grid gap-8 grid-cols-1 md:grid-cols-3 mt-10 mb-24">
+        <div class="grid gap-4 grid-cols-3 items-center">
+            <img class="col-span-1" src="img/image-retro-pcs.jpg" class="h-4/5" alt="">
+            <div class="col-span-2 flex flex-col justify-start space-y-3">
+                <p class="text-3xl font-bold text-grayishBlue tracking-widest">01</p>
+                <p class="font-bold text-sm text-veryDarkBlue">Revolving Retro PCs</p>
+                <p class="text-sm text-darkGreyishBlue">What happens when old PCs are given modern upgrades?</p>
+            </div>
+        </div>
+        <div class="grid gap-4 grid-cols-3 items-center">
+            <img class="col-span-1" src="img/image-top-laptops.jpg" class="h-4/5" alt="">
+            <div class="col-span-2 flex flex-col justify-start space-y-3">
+                <p class="text-3xl font-bold text-grayishBlue tracking-widest">02</p>
+                <p class="font-bold text-sm text-veryDarkBlue">Top 10 Laptops of 2022</p>
+                <p class="text-sm text-darkGreyishBlue">Our best picks for various needs and budgets.</p>
+            </div>
+        </div>
+        <div class="grid gap-4 grid-cols-3 items-center">
+            <img class="col-span-1" src="img/image-gaming-growth.jpg" class="h-4/5" alt="">
+            <div class="col-span-2 flex flex-col justify-start space-y-3">
+                <p class="text-3xl font-bold text-grayishBlue tracking-widest">03</p>
+                <p class="font-bold text-sm text-veryDarkBlue">The Growth of Gaming</p>
+                <p class="text-sm text-darkGreyishBlue">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
